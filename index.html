@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>최지훈 포트폴리오</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/fullpage.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
+   
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/fullpage.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/colorbox.css">
+    <link rel="shortcut icon" href="img/WAY_%EC%B5%9C%EC%A7%80%ED%9B%88.png">
+    
+    <script>
+		$(function(){
+            var size = $('body').width();
+
+            if (size > 1390) {
+                $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:760});
+            } else if (850 < size && size <= 1389){
+                $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:560});
+            } else if (500 < size && size <= 849){                               
+                $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:456});
+            } else if (size <= 500){                               
+                $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:300});
+            };
+
+            $(window).resize(function(){
+                var size = $('body').width();
+                
+                if (size > 1390) {
+                    $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:760});
+                } else if (850 < size && size <= 1389){
+                    $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:560});
+                } else if (500 < size && size <= 849){                               
+                    $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:456});
+                } else if (size <= 500){                               
+                    $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:300});
+                };
+            });
+            
+            $(".slide_1 .pf_st_cut>ul>li").click(function(){
+                var i = $(this).index();
+
+                $(".slide_1 .pf_img_container .pf_img_1").css('display', 'none');
+                $(".slide_1 .pf_img_container .pf_img_1").eq(i).css('display','block');
+                
+                $(".slide_1 .pf_txt_container .mpf_img .pf_img_1").css('display', 'none');
+                $(".slide_1 .pf_txt_container .mpf_img .pf_img_1").eq(i).css('display','block');
+            });
+            $(".slide_2 .pf_st_cut>ul>li").click(function(){
+                var i = $(this).index();
+
+                $(".slide_2 .pf_img_container .pf_img_1").css('display', 'none');
+                $(".slide_2 .pf_img_container .pf_img_1").eq(i).css('display','block');
+                
+                $(".slide_2 .pf_txt_container .mpf_img .pf_img_1").css('display', 'none');
+                $(".slide_2 .pf_txt_container .mpf_img .pf_img_1").eq(i).css('display','block');
+            });
+            $(".slide_3 .pf_st_cut>ul>li").click(function(){
+                var i = $(this).index();
+
+                $(".slide_3 .pf_img_container .pf_img_1").css('display', 'none');
+                $(".slide_3 .pf_img_container .pf_img_1").eq(i).css('display','block');
+            
+                $(".slide_3 .pf_txt_container .mpf_img .pf_img_1").css('display', 'none');
+                $(".slide_3 .pf_txt_container .mpf_img .pf_img_1").eq(i).css('display','block');
+            });
+            $(".slide_4 .pf_st_cut>ul>li").click(function(){
+                var i = $(this).index();
+
+                $(".slide_4 .pf_img_container .pf_img_1").css('display', 'none');
+                $(".slide_4 .pf_img_container .pf_img_1").eq(i).css('display','block');
+            
+                $(".slide_4 .pf_txt_container .mpf_img .pf_img_1").css('display', 'none');
+                $(".slide_4 .pf_txt_container .mpf_img .pf_img_1").eq(i).css('display','block');
+            });
+            $(".slide_5 .pf_st_cut>ul>li").click(function(){
+                var i = $(this).index();
+
+                $(".slide_5 .pf_img_container .pf_img_1").css('display', 'none');
+                $(".slide_5 .pf_img_container .pf_img_1").eq(i).css('display','block');
+            
+                $(".slide_5 .pf_txt_container .mpf_img .pf_img_1").css('display', 'none');
+                $(".slide_5 .pf_txt_container .mpf_img .pf_img_1").eq(i).css('display','block');
+            });
+            $(".slide_6 .pf_st_cut>ul>li").click(function(){
+                var i = $(this).index();
+
+                $(".slide_6 .pf_img_container .pf_img_1").css('display', 'none');
+                $(".slide_6 .pf_img_container .pf_img_1").eq(i).css('display','block');
+            
+                $(".slide_6 .pf_txt_container .mpf_img .pf_img_1").css('display', 'none');
+                $(".slide_6 .pf_txt_container .mpf_img .pf_img_1").eq(i).css('display','block');
+            });
+        });
+	</script>
+</head>
+
+
+<body>
+    <nav id="navTop">
+        <div id="navTop_box">
+            <div id="logo">
+                <div><img src="img/WAY_%EC%B5%9C%EC%A7%80%ED%9B%88.png" alt=""></div>
+                <span>최지훈 / Choi Ji Hun</span>
+            </div>
+            <ul id="topMenu">
+                <li data-menuanchor="0st"><a href="#0st">HOME</a></li>
+                <li data-menuanchor="1st"><a href="#1st">PROFILE</a></li>
+                <li data-menuanchor="2st"><a href="#2st">PORTFOLIO</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="full-page">
+        <div class="section s0">
+            <div class="section_home">
+                <h1>PORTFOLIO</h1>
+            </div>
+        </div>
+        <div class="section s1">
+            <div class="section_content section_content1">
+            <h2>PROFILE</h2>
+                <div class="pr_container">
+                    <div class="pr_profile">
+                        <div><img src="img/%EC%A6%9D%EB%AA%85%EC%82%AC%EC%A7%84.JPG" /></div>
+                        <ul>
+                            <li>최지훈 / Choi Ji Hun</li>
+                            <li><i class="fas fa-user"></i>영상관련 직종(지원직종)</li>
+                            <li><i class="fas fa-calendar"></i>1995.03.23 (만 25세)</li>
+                            <li><i class="fas fa-map-marker-alt"></i>경기도 구리시 거주</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="right_box">
+                        <div class="pr_box edu_box">
+                            <h3 class="pr_title edu_title">EDUCATION</h3>
+                            <div class="pr_date edu_date">
+                                <div>2014.03 - 2020.02</div>
+                                <div>2020.09 - 2021.03</div>
+                            </div>
+                            <div class="pr_txt edu_txt">
+                                <div>강원대학교 (주)사학과 / (복수)영상문화학과</div>
+                                <div>방송정보국제교육원 (광고콘텐츠제작)</div>
+
+                            </div>
+                        </div>
+                        <div class="pr_box cer_box">
+                            <h3 class="pr_title cer_title">CAREER</h3>
+                            <div class="pr_date cer_date">
+                                <div>2019.07.01 - 08.14</div>
+                            </div>
+                            <div class="pr_txt cer_txt">
+                                <div>G1 강원민방 (조연출)</div>
+                            </div>
+                        </div>
+                        <div class="ct_box">
+                           <div class="ct_inbox">
+                               <div class="ct_title"><h3>CONTACT</h3></div>
+                               <div class="ct_txt">
+                                   <ul>
+                                       <li><img src="img/con_phone.png" alt=""></li>
+                                       <li>010-4171-3474</li>
+                                   </ul>
+                                    <ul>
+                                       <li><img src="img/con_email.png" alt=""></li>
+                                       <li>cjh9181@naver.com</li>
+                                   </ul>
+                                   <ul>
+                                       <li><img src="img/con_kakao.png" alt=""></li>
+                                       <li>ID: cjh9181</li>
+                                   </ul>
+                               </div>
+                           </div>
+                            
+                        </div>
+                    </div>
+                </div><!--pr_container-->
+            </div><!--section_box section_box_content-->
+        </div><!--section s1-->
+        <div class="section s2">
+            <div class="section_content section_content3">
+<!--               포트폴리오 1-->
+                <div class="slide slide_1">
+                    <h2>DJI 오즈모 모바일3</h2>
+                    <div class="pf_img_container">
+                        <div class="image">
+                            <div class="pf_img_1" style="display:block;"><img src="thumb/dji1.jpg" /></div>
+                            <div class="pf_img_1"><img src="thumb/dji2.jpg" /></div>
+                            <div class="pf_img_1"><img src="thumb/dji3.jpg" /></div>
+                        </div>   
+                        <div class="pf_st_cut">
+                            <ul>
+                                <li><img src="thumb/dji1.jpg"></li>
+                                <li><img src="thumb/dji2.jpg"></li>
+                                <li><img src="thumb/dji3.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pf_txt_container" >
+                        <h3 class="pf_title">DJI 오즈모 모바일3</h3>
+                        <div class="mpf_img mpf_img_2">
+                                <div>
+                                    <div class="pf_img_1" style="display:block;"><img src="thumb/dji1.jpg" /></div>
+                                    <div class="pf_img_1"><img src="thumb/dji2.jpg" /></div>
+                                    <div class="pf_img_1"><img src="thumb/dji3.jpg" /></div>
+                                </div>    
+                                <div class="pf_st_cut">
+                                    <ul>
+                                        <li><img src="thumb/dji1.jpg"></li>
+                                        <li><img src="thumb/dji2.jpg"></li>
+                                        <li><img src="thumb/dji3.jpg"></li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div>
+                            <span class="pf_name">장르 :</span>
+                            <span class="pf_txt">제품리뷰</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">기여도 : </span>
+                            <span class="pf_txt">기획(100%), 연출(100%), 촬영(100%), 편집(100%)</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">작업툴 :</span>
+                            <span class="pf_txt">Canon Eos 90D, Final Cut Pro X</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">설명 :</span>
+                            <span class="pf_txt">&nbsp;&nbsp;'DJI 오즈모 모바일3'에 관심이 없는 사람들도 제품에 대한 관심을 높일 수 있도록 영상 제작. 시청자가 공감할 수 있을 법한 상황 설정을 통해, 짐벌의 핵심 기능만 쉽게 접근할 수 있도록 소개하는 것에 집중.</span>
+                        </div>
+                        <div class="pf_gosite"><a href="https://www.youtube.com/embed/DQ5aHZLDodM" class="portfolio_btn">CLICK TO PLAY</a></div>    
+                    </div>
+                </div>
+<!--               포트폴리오 2-->
+                <div class="slide slide_2">
+                    <h2>HBAF (허니버터아몬드)</h2>
+                    <div class="pf_img_container">
+                        <div class="image">
+                            <div class="pf_img_1" style="display:block;"><img src="thumb/HBAF1.jpg" /></div>
+                            <div class="pf_img_1"><img src="thumb/HBAF2.jpg" /></div>
+                            <div class="pf_img_1"><img src="thumb/HBAF3.jpg" /></div>
+                        </div>   
+                        <div class="pf_st_cut">
+                            <ul>
+                                <li><img src="thumb/HBAF1.jpg"></li>
+                                <li><img src="thumb/HBAF2.jpg"></li>
+                                <li><img src="thumb/HBAF3.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pf_txt_container" >
+                        <h3 class="pf_title">HBAF (허니버터아몬드)</h3>
+                        <div class="mpf_img mpf_img_2">
+                                <div>
+                                    <div class="pf_img_1" style="display:block;"><img src="thumb/HBAF1.jpg" /></div>
+                                    <div class="pf_img_1"><img src="thumb/HBAF2.jpg" /></div>
+                                    <div class="pf_img_1"><img src="thumb/HBAF3.jpg" /></div>
+                                </div>    
+                                <div class="pf_st_cut">
+                                    <ul>
+                                        <li><img src="thumb/HBAF1.jpg"></li>
+                                        <li><img src="thumb/HBAF2.jpg"></li>
+                                        <li><img src="thumb/HBAF3.jpg"></li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div>
+                            <span class="pf_name">장르 :</span>
+                            <span class="pf_txt">광고</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">기여도 : </span>
+                            <span class="pf_txt">기획(100%), 연출(70%), 촬영(50%), 편집(100%)</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">작업툴 :</span>
+                            <span class="pf_txt">Sony A7M3, Premier Pro</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">설명 :</span>
+                            <span class="pf_txt"> &nbsp;'다양성'으로 '펀슈머'를 공략한 허니버터아몬드(HBAF) 회사의 광고 영상을 제작. 해당 제품을 더욱 효과적으로 알리기 위해 회사에 대한 정보, 경쟁사 비교, 한국 소비 트랜드, 제품의 장단점 등을 면밀히 파악하여 기획. 팀 단위의 작업에서 PD 및 감독 역할을 담당하여 책임감 있게 프로젝트를 이끌어가는 경험을 할 수 있었음.</span>
+                        </div>
+                        <div class="pf_gosite"><a href="https://www.youtube.com/embed/KeavwdZTgnU" class="portfolio_btn">CLICK TO PLAY</a></div>    
+                    </div>
+                </div>
+<!--               포트폴리오 3-->
+                <div class="slide slide_3">
+                    <h2>말하지 않으면 모른다</h2>
+                    <div class="pf_img_container">
+                        <div class="image">
+                            <div class="pf_img_1" style="display:block;"><img src="thumb/mal1.jpg" /></div>
+                            <div class="pf_img_1"><img src="thumb/mal2.jpg" /></div>
+                            <div class="pf_img_1"><img src="thumb/mal3.jpg" /></div>
+                        </div>   
+                        <div class="pf_st_cut">
+                            <ul>
+                                <li><img src="thumb/mal1.jpg"></li>
+                                <li><img src="thumb/mal2.jpg"></li>
+                                <li><img src="thumb/mal3.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pf_txt_container" >
+                        <h3 class="pf_title">말하지 않으면 모른다</h3>
+                        <div class="mpf_img mpf_img_2">
+                                <div>
+                                    <div class="pf_img_1" style="display:block;"><img src="thumb/mal1.jpg" /></div>
+                                    <div class="pf_img_1"><img src="thumb/mal2.jpg" /></div>
+                                    <div class="pf_img_1"><img src="thumb/mal3.jpg" /></div>
+                                </div>    
+                                <div class="pf_st_cut">
+                                    <ul>
+                                        <li><img src="thumb/mal1.jpg"></li>
+                                        <li><img src="thumb/mal2.jpg"></li>
+                                        <li><img src="thumb/mal3.jpg"></li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div>
+                            <span class="pf_name">장르 :</span>
+                            <span class="pf_txt">단편영화</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">기여도 : </span>
+                            <span class="pf_txt">기획(70%), 연출(70%), 촬영(10%), 편집(100%)</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">작업툴 :</span>
+                            <span class="pf_txt">Canon Eos 6D Mark2, Final Cut Pro X</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">설명 :</span>
+                            <span class="pf_txt">&nbsp;&nbsp;'서로의 마음을 알아주지 못하는 엄마와 아들의 갈등'을 주제로 만든 대학교 수업 작업물. 협업이 제대로 이루어지 않을 경우 얼마만큼의 부담을 갖게 되는지 알 수 있었던 작업. 주 역할은 편집이었지만, 감독 역할을 한 학우가 책임감있게 이끌어가지 못하여 맡은 부분 이상의 역할에 관여. 기획, 연출 단계에서 난항을 겪긴 했지만 첫 창작물이었고, 영상제작 과정에 대해 많이 배울 수 있었음.</span>
+                        </div>
+                        <div class="pf_gosite"><a href="https://www.youtube.com/embed/CGt9uO7Gvqg" class="portfolio_btn">CLICK TO PLAY</a></div>    
+                    </div>
+                </div>
+<!--               포트폴리오 4-->
+                <div class="slide slide_4">
+                    <h2>OCN</h2>
+                    <div class="pf_img_container">
+                        <div class="image">
+                            <div class="pf_img_1" style="display:block;"><img src="thumb/OCN1.jpg" /></div>
+                            <div class="pf_img_1"><img src="thumb/OCN2.jpg" /></div>
+                            <div class="pf_img_1"><img src="thumb/OCN3.jpg" /></div>
+                        </div>   
+                        <div class="pf_st_cut">
+                            <ul>
+                                <li><img src="thumb/OCN1.jpg"></li>
+                                <li><img src="thumb/OCN2.jpg"></li>
+                                <li><img src="thumb/OCN3.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pf_txt_container" >
+                        <h3 class="pf_title">OCN</h3>
+                        <div class="mpf_img mpf_img_2">
+                                <div>
+                                    <div class="pf_img_1" style="display:block;"><img src="thumb/OCN1.jpg" /></div>
+                                    <div class="pf_img_1"><img src="thumb/OCN2.jpg" /></div>
+                                    <div class="pf_img_1"><img src="thumb/OCN3.jpg" /></div>
+                                </div>    
+                                <div class="pf_st_cut">
+                                    <ul>
+                                        <li><img src="thumb/OCN1.jpg"></li>
+                                        <li><img src="thumb/OCN2.jpg"></li>
+                                        <li><img src="thumb/OCN3.jpg"></li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div>
+                            <span class="pf_name">장르 :</span>
+                            <span class="pf_txt">로고 타이틀</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">기여도 : </span>
+                            <span class="pf_txt">기획(100%), 편집(100%)</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">작업툴 :</span>
+                            <span class="pf_txt">After Effect, C4D</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">설명 :</span>
+                            <span class="pf_txt">&nbsp;&nbsp;최근 방영한 OCN 대표작 '경이로운 소문'의 명장면을 활용하여 만든 로고 타이틀 영상.</span>
+                        </div>
+                        <div class="pf_gosite"><a href="https://www.youtube.com/embed/L9VGEBchplQ" class="portfolio_btn">CLICK TO PLAY</a></div>    
+                    </div>
+                </div>
+<!--               포트폴리오 5-->
+                <div class="slide slide_5">
+                    <h2>저는 마음으로 소리를 듣습니다</h2>
+                    <div class="pf_img_container">
+                        <div class="image">
+                            <div class="pf_img_1" style="display:block;"><img src="thumb/sodam1.jpg" /></div>
+                            <div class="pf_img_1"><img src="thumb/sodam2.jpg" /></div>
+                            <div class="pf_img_1"><img src="thumb/sodam3.jpg" /></div>
+                        </div>   
+                        <div class="pf_st_cut">
+                            <ul>
+                                <li><img src="thumb/sodam1.jpg"></li>
+                                <li><img src="thumb/sodam2.jpg"></li>
+                                <li><img src="thumb/sodam3.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pf_txt_container" >
+                        <h3 class="pf_title">저는 마음으로 소리를 듣습니다</h3>
+                        <div class="mpf_img mpf_img_2">
+                                <div>
+                                    <div class="pf_img_1" style="display:block;"><img src="thumb/sodam1.jpg" /></div>
+                                    <div class="pf_img_1"><img src="thumb/sodam2.jpg" /></div>
+                                    <div class="pf_img_1"><img src="thumb/sodam3.jpg" /></div>
+                                </div>    
+                                <div class="pf_st_cut">
+                                    <ul>
+                                        <li><img src="thumb/sodam1.jpg"></li>
+                                        <li><img src="thumb/sodam2.jpg"></li>
+                                        <li><img src="thumb/sodam3.jpg"></li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div>
+                            <span class="pf_name">장르 :</span>
+                            <span class="pf_txt">공모전, 드라마</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">기여도 : </span>
+                            <span class="pf_txt">기획(60%), 연출(50%), 촬영(30%), 편집(20%)</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">작업툴 :</span>
+                            <span class="pf_txt">Sony A7M3, Premier Pro</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">설명 :</span>
+                            <span class="pf_txt">&nbsp;&nbsp;난청인을 주제로 한 '소담 공모전' 참여작. 선명한 소리로 전해지지는 않지만, 마음으로 소리가 전달됨을 표현. 또한 "사랑해"라는 컨셉을 설정하고, 감성적인 영상을 만들어보고자 노력. 팀 작업에서 중심이 되어 회의를 이끌며 기획, 연출 단계에서 적극적으로 아이디어를 제시. 현장에서는 조연출의 역할을 담당.</span>
+                        </div>
+                        <div class="pf_gosite"><a href="https://www.youtube.com/embed/e-acKQozv04" class="portfolio_btn">CLICK TO PLAY</a></div>    
+                    </div>
+                </div>
+<!--               포트폴리오 6-->
+                <div class="slide slide_6">
+                    <h2>춘천이궁, 고종황제의 사라진 궁궐</h2>
+                    <div class="pf_img_container">
+                        <div class="image">
+                            <div class="pf_img_1" style="display:block;"><img src="thumb/chun1.jpg" /></div>
+                            <div class="pf_img_1"><img src="thumb/chun2.jpg" /></div>
+                            <div class="pf_img_1"><img src="thumb/chun3.jpg" /></div>
+                        </div>   
+                        <div class="pf_st_cut">
+                            <ul>
+                                <li><img src="thumb/chun1.jpg"></li>
+                                <li><img src="thumb/chun2.jpg"></li>
+                                <li><img src="thumb/chun3.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pf_txt_container" >
+                        <h3 class="pf_title">춘천이궁, 고종황제의 사라진 궁궐</h3>
+                        <div class="mpf_img mpf_img_2">
+                                <div>
+                                    <div class="pf_img_1" style="display:block;"><img src="thumb/chun1.jpg" /></div>
+                                    <div class="pf_img_1"><img src="thumb/chun2.jpg" /></div>
+                                    <div class="pf_img_1"><img src="thumb/chun3.jpg" /></div>
+                                </div>    
+                                <div class="pf_st_cut">
+                                    <ul>
+                                        <li><img src="thumb/chun1.jpg"></li>
+                                        <li><img src="thumb/chun2.jpg"></li>
+                                        <li><img src="thumb/chun3.jpg"></li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div>
+                            <span class="pf_name">장르 :</span>
+                            <span class="pf_txt">다큐멘터리</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">기여도 : </span>
+                            <span class="pf_txt">기획(10%), 촬영(10%), 편집(30%)</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">작업툴 :</span>
+                            <span class="pf_txt">Final Cut Pro 7</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">설명 :</span>
+                            <span class="pf_txt">&nbsp;&nbsp;G1 강원민방 광복절 특집 다큐멘터리. 짧은 기간이지만 조연출로서 경험을 쌓을 수 있어 좋았음. 편집 단계에서 인터뷰 컷편집, 색보정 등을 함.</span>
+                        </div>
+                        <div class="pf_gosite"><a href="https://www.youtube.com/embed/Bs5I5Ooqd3Q" class="portfolio_btn">CLICK TO PLAY (타계정)</a></div>    
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div id="footer_txt">Copyright 2021. Choi Ji Hun All rights reserved</div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    new fullpage('#full-page', {
+        licenseKey:'OPEN-SOURCE-GPLV3-LICENSE',
+        anchors:["0st","1st","2st"],
+        menu:"#topMenu",
+        sectionsColor:['#fff', '#eee', '#fff'],
+        scrollingSpeed: 1000,
+        slidesNavigation: true,
+		slidesNavPosition: 'bottom',
+        onLeave: function(origin, destination, direction) {
+            var leavingSection = this;
+            
+            if(origin.index == 0) {
+                $('.right_box .ct_inbox .ct_txt ul li').delay(600).fadeIn();
+            }
+            if(origin.index == 2) {
+                $('.right_box .ct_inbox .ct_txt ul li').delay(600).fadeIn();
+            }
+            if(origin.index == 1) {
+                $('.right_box .ct_inbox .ct_txt ul li').fadeOut();
+            }
+        },
+    });
+</script>
+</body>
+</html>
